@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<FbxAnimationImporter xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     
+                     EnemyName="TrollGun" 
+                     FbxName="BogusSpriteSheetFileName">
+	
+	                <!--[TODO] Add ranged projectile-->
+  
+  <MyAnimationClips>
+      <!--<SpriteSheetImporter_AnimationClip Name="Idle"
+                                       StartingFrame="0"                //Set Start Frame
+                                       EndingFrame="5"                  //Set End Frame
+                                       HasAnimationEvent="false"        //Don't change
+                                       AnimationEventFrame="-1" />-->
+
+	  <!--Start Animations at FRAME 1 NOT 0-->
+
+	  <SpriteSheetImporter_AnimationClip Name="Idle"
+                                       StartingFrame="0" 
+                                       EndingFrame="3" 
+                                       HasAnimationEvent="false" 
+                                       AnimationEventFrame="-1" />
+	
+    <SpriteSheetImporter_AnimationClip Name="DeathAnim"
+                                       StartingFrame="31"
+                                       EndingFrame="41"
+                                       HasAnimationEvent="false"
+                                       AnimationEventFrame="-1" />
+    
+    <SpriteSheetImporter_AnimationClip Name="VulnerableAnim"
+                                       StartingFrame="65"
+                                       EndingFrame="83"
+                                       HasAnimationEvent="false"
+                                       AnimationEventFrame="-1" />
+    
+    <SpriteSheetImporter_AnimationClip Name="RangedAttack"
+                                       StartingFrame="12"
+                                       EndingFrame="19"
+                                       HasAnimationEvent="true"
+                                       AnimationEventFrame="1"
+                                       AnimationEventFunctionName="RangedAttackAnimationComplete" />
+
+	  <SpriteSheetImporter_AnimationClip Name="MeleeAttack"
+                                       StartingFrame="20"
+                                       EndingFrame="30"
+                                       HasAnimationEvent="false"
+                                       AnimationEventFrame="-1" />
+  </MyAnimationClips>
+</FbxAnimationImporter>
